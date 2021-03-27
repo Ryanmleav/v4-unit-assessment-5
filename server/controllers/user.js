@@ -41,7 +41,7 @@ module.exports = {
     return res.sendStatus(200);
   },
   getUser: async (req, res) => {
-    const userInfo = await req.app.get('db').find_user_by_username([req.session.user.id]);
+    const userInfo = await req.app.get('db').user.find_user_by_username([req.session.user.id]);
     return res.status(200).send(userInfo);
   },
 }

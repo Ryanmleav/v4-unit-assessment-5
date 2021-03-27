@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import Auth from './Components/Auth/Auth'
 import Dash from './Components/Dash/Dash'
 import Post from './Components/Post/Post'
-import Form from './Components/Nav/Nav'
+import Form from './Components/Form/Form'
 
 export default (
   <Switch>

@@ -84,3 +84,17 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+@media (max-width: 1200px) {
+  .auth-container {
+    width: 100vw;
+    box-shadow: none;
+    background: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .auth-button-container{
+    width: 100%;
+  }
+}
