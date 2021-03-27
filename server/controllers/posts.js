@@ -40,12 +40,12 @@ module.exports = {
     createPost: (req, res) => {
       //code here
       const db = req.app.get('db');
-      const { post_id } = req.session.user;
+      const { id } = req.session.user;
       const {title, img, content} = req.body;
       const date = newDate
-      if (login) {
-        db.post.create_post([post_id, title, img, content, date])
-        .then (res.send(200))
+      if (id) {
+        db.post.create_post([id, title, img, content, date])
+        .then (res.status(200))
       } 
       else {
         res.sendStatus(403)

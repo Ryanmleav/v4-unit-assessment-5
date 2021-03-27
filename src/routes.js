@@ -7,7 +7,7 @@ import Form from './Components/Nav/Nav'
 
 export default (
   <Switch>
-    <Route path='/' component={Auth} />
+    <Route exact path='/' component={Auth} />
     <Route path='/dash' component={Dash} />
     <Route path='/post/:id' component={Post} />
     <Route path='/form' component={Form} />
